@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+main {
+    display: flex;
+    justify-content: center;
+
+}
+h3{
+    color: red;
+}
+tr {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+#timer {
+    color: red;
+}
+#startGame
+{
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    height: 20px;
+    width: 40px;
+}
+#startGame:hover {
+    background-color: red;
+}
+.clignotant {
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+@keyframes clignoter {
+    0%   { opacity:1; }
+    40%   {opacity:0; }
+    100% { opacity:1; }
+}
+.img1 {
+    background-image: url('../img/1.png');
+}
+.img2 {
+    background-image: url('../img/2.png');
+}
+.img3 {
+    background-image: url('../img/3.png');
+}
+.character {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.block {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: darkcyan;
+}
+#boardGame
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 80vw;
+}
+.none
+{
+    display: none;
+}
+#score {
+    font-size: larger;
+    color: crimson;
+}
+.hammer {
+    cursor: url(../img/hammer.cur), auto;
+}
+.blood
+{
+    background-image: url('../img/blood_effect.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.result {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: darkgreen;
+    color: white;
+    height: 200px;
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid greenyellow;
+}
+#continue {
+    width: 60px;
+    text-align: center;
+    margin: 20px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
